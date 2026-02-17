@@ -1,0 +1,35 @@
+{
+  "name": "@tito/neatcore",
+  "version": "0.1.0",
+  "description": "A clean, zero-dependency, TypeScript-first utility core.",
+  "license": "MIT",
+  "author": "Tito Candra",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "@vitest/coverage-v8": "^4.0.18",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
