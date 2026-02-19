@@ -1,4 +1,4 @@
-# @tito/neatcore
+# @titocandradev/neatcore
 
 > Zero-dependency, tree-shakeable, TypeScript-first utility library.
 
@@ -16,19 +16,19 @@ focused on:
 ## 📦 Installation
 
 ```bash
-npm install @tito/neatcore
+npm install @titocandradev/neatcore
 ```
 
 or
 
 ```bash
-pnpm add @tito/neatcore
+pnpm add @titocandradev/neatcore
 ```
 
 or
 
 ```bash
-bun add @tito/neatcore
+bun add @titocandradev/neatcore
 ```
 
 ---
@@ -38,7 +38,7 @@ bun add @tito/neatcore
 ### ES Module
 
 ```ts
-import { firstUppercase } from "@tito/neatcore";
+import { firstUppercase } from "@titocandradev/neatcore";
 
 firstUppercase("tito candra");
 // → "Tito Candra"
@@ -47,7 +47,7 @@ firstUppercase("tito candra");
 ### CommonJS
 
 ```js
-const { firstUppercase } = require("@tito/neatcore");
+const { firstUppercase } = require("@titocandradev/neatcore");
 
 firstUppercase("tito candra");
 ```
@@ -86,7 +86,7 @@ NeatCore is built with the following principles:
 Import only what you need:
 
 ```ts
-import { firstUppercase } from "@tito/neatcore";
+import { firstUppercase } from "@titocandradev/neatcore";
 ```
 
 Modern bundlers like Vite, Webpack, and Rollup will automatically remove
