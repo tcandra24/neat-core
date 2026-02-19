@@ -1,4 +1,4 @@
-export function firstUppercase(str: string): string {
+export function capitalizeWords(str: string): string {
   if (!str) return "";
   return str
     .trim()

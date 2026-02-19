@@ -130,7 +130,7 @@ MIT
 ## 👨‍💻 Author
 
 Tito Candra\
-GitHub: https://github.com/your-username
+GitHub: https://github.com/tcandra24
 
 ---
 

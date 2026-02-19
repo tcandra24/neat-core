@@ -24,4 +24,9 @@ describe("chunk", () => {
     const result = chunk([], 2);
     expect(result).toEqual([]);
   });
+
+  it("should return an empty array for an empty parameter size chunk", () => {
+    const result = chunk([1, 2, 3, 4, 5], 0);
+    expect(result).toEqual([]);
+  });
 });
