@@ -1,3 +1,9 @@
+/**
+ * Convert a string to camel case.
+ *
+ * @param str - The input string.
+ * @returns The input string converted to camel case.
+ */
 export function toCamelCase(str: string): string {
   if (!str) return "";
 
