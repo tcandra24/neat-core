@@ -140,3 +140,9 @@ Because small utilities are often underestimated.
 
 NeatCore is designed as a strongly-typed engineering utility foundation
 --- not just another helper library.
+
+## Documentation
+
+Read full API Design Guideline here:
+
+👉 https://github.com/tcandra24/neatcore/blob/main/docs/API_DESIGN_GUIDELINE.md
