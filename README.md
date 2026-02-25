@@ -38,18 +38,18 @@ bun add @titocandradev/neatcore
 ### ES Module
 
 ```ts
-import { firstUppercase } from "@titocandradev/neatcore";
+import { capitalizeWords } from "@titocandradev/neatcore";
 
-firstUppercase("tito candra");
+capitalizeWords("tito candra");
 // → "Tito Candra"
 ```
 
 ### CommonJS
 
 ```js
-const { firstUppercase } = require("@titocandradev/neatcore");
+const { capitalizeWords } = require("@titocandradev/neatcore");
 
-firstUppercase("tito candra");
+capitalizeWords("tito candra");
 ```
 
 ---
@@ -58,12 +58,12 @@ firstUppercase("tito candra");
 
 ### 🔤 String
 
-- `firstUppercase(str: string): string`
+- `capitalizeWords(str: string): string`
 
 Example:
 
 ```ts
-firstUppercase("hello world");
+capitalizeWords("hello world");
 // → "Hello World"
 ```
 
@@ -86,7 +86,7 @@ NeatCore is built with the following principles:
 Import only what you need:
 
 ```ts
-import { firstUppercase } from "@titocandradev/neatcore";
+import { capitalizeWords } from "@titocandradev/neatcore";
 ```
 
 Modern bundlers like Vite, Webpack, and Rollup will automatically remove
