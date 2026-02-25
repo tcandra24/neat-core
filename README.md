@@ -145,4 +145,4 @@ NeatCore is designed as a strongly-typed engineering utility foundation
 
 Read full API Design Guideline here:
 
-👉 https://github.com/tcandra24/neatcore/blob/main/docs/API_DESIGN_GUIDELINE.md
+👉 https://github.com/tcandra24/neat-core/blob/main/docs/API_DESIGN_GUIDELINE.md
