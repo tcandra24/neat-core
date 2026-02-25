@@ -2,16 +2,15 @@
 
 ## 1. Purpose
 
-NeatCore adalah zero-dependency utility library untuk TypeScript yang
-berfokus pada:
+NeatCore is a zero-dependency utility library for TypeScript that focuses on:
 
 - Strong typing
-- Pure & predictable function
+- Pure & predictable functions
 - Immutable by default
-- Konsistensi desain API
+- Consistent API design
 
-NeatCore bukan pengganti semua utility library.\
-NeatCore adalah foundation yang stabil untuk engineering yang rapi.
+NeatCore is not a replacement for all utility libraries.
+NeatCore is a stable foundation for neat engineering.
 
 ---
 
@@ -19,14 +18,14 @@ NeatCore adalah foundation yang stabil untuk engineering yang rapi.
 
 ## 2.1 Pure Function Only
 
-- Tidak mengubah parameter
-- Tidak memiliki side-effect
-- Tidak mengakses global state
-- Output selalu deterministik
+- Does not change parameters
+- Has no side effects
+- Does not access global state
+- Output is always deterministic
 
 ## 2.2 Immutable by Default
 
-Input tidak pernah dimodifikasi.
+Input is never modified.
 
 ```ts
 import { unique } from "neatcore";
@@ -40,9 +39,9 @@ console.log(arr);
 
 ## 2.3 Strong Typing First
 
-- Tidak menggunakan `any`
-- Menggunakan generic jika perlu
-- Menjaga tipe input
+- Don't use `any`
+- Use generics when necessary
+- Maintain input types
 
 ---
 
@@ -212,19 +211,19 @@ debounced();
 # 8. Versioning Policy
 
 - Patch → bug fix\
-- Minor → utility baru\
+- Minor → new utility\
 - Major → breaking change
 
-NeatCore berusaha menghindari breaking change.
+NeatCore tries to avoid breaking changes.
 
 ---
 
 # 9. Final Principle
 
-NeatCore bukan tentang banyaknya utility.\
-NeatCore tentang utility yang:
+NeatCore isn't about the number of utilities.
+NeatCore is about utilities that are:
 
-- Konsisten\
-- Aman\
-- Type-safe\
+- Consistent
+- Secure
+- Type-safe
 - Production-ready
