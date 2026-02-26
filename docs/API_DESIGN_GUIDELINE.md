@@ -220,19 +220,15 @@ debounced();
 ```ts
 import { tryCatch } from "@titocandradev/neatcore";
 
-async function callApi() {
-  const [error, result] = await tryCatch(async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+const [error, result] = await tryCatch(async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
 
-    if (!res.ok) {
-      throw new Error("HTTP error " + res.status);
-    }
+  if (!res.ok) {
+    throw new Error("HTTP error " + res.status);
+  }
 
-    return res.json();
-  });
-
-  console.log(error, result);
-}
+  return res.json();
+});
 ```
 
 ---
