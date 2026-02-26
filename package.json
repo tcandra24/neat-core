@@ -1,6 +1,6 @@
 {
   "name": "@titocandradev/neatcore",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": false,
   "description": "A clean, zero-dependency, TypeScript-first utility core.",
   "homepage": "https://github.com/tcandra24/neat-core#readme",
