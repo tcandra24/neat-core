@@ -28,7 +28,7 @@ NeatCore is a stable foundation for neat engineering.
 Input is never modified.
 
 ```ts
-import { unique } from "neatcore";
+import { unique } from "@titocandradev/neatcore";
 
 const arr = [1, 2, 2, 3];
 const result = unique(arr);
@@ -59,7 +59,7 @@ console.log(arr);
 ## unique
 
 ```ts
-import { unique } from "neatcore";
+import { unique } from "@titocandradev/neatcore";
 
 unique([1, 1, 2, 3]);
 // [1, 2, 3]
@@ -68,7 +68,7 @@ unique([1, 1, 2, 3]);
 ## uniqueBy
 
 ```ts
-import { uniqueBy } from "neatcore";
+import { uniqueBy } from "@titocandradev/neatcore";
 
 uniqueBy(
   [
@@ -84,7 +84,7 @@ uniqueBy(
 ## groupBy
 
 ```ts
-import { groupBy } from "neatcore";
+import { groupBy } from "@titocandradev/neatcore";
 
 groupBy(["apple", "banana", "apricot"], (item) => item[0]);
 ```
@@ -92,7 +92,7 @@ groupBy(["apple", "banana", "apricot"], (item) => item[0]);
 ## chunk
 
 ```ts
-import { chunk } from "neatcore";
+import { chunk } from "@titocandradev/neatcore";
 
 chunk([1, 2, 3, 4, 5], 2);
 // [[1,2],[3,4],[5]]
@@ -105,7 +105,7 @@ chunk([1, 2, 3, 4, 5], 2);
 ## capitalize
 
 ```ts
-import { capitalize } from "neatcore";
+import { capitalize } from "@titocandradev/neatcore";
 
 capitalize("neatcore");
 // "Neatcore"
@@ -114,7 +114,7 @@ capitalize("neatcore");
 ## capitalizeWords
 
 ```ts
-import { capitalizeWords } from "neatcore";
+import { capitalizeWords } from "@titocandradev/neatcore";
 
 capitalizeWords("hello world");
 // "Hello World"
@@ -123,7 +123,7 @@ capitalizeWords("hello world");
 ## toCamelCase
 
 ```ts
-import { toCamelCase } from "neatcore";
+import { toCamelCase } from "@titocandradev/neatcore";
 
 toCamelCase("hello-world_test");
 // "helloWorldTest"
@@ -132,10 +132,19 @@ toCamelCase("hello-world_test");
 ## toKebabCase
 
 ```ts
-import { toKebabCase } from "neatcore";
+import { toKebabCase } from "@titocandradev/neatcore";
 
 toKebabCase("helloWorldTest");
 // "hello-world-test"
+```
+
+## initialWords
+
+```ts
+import { initialWords } from "@titocandradev/neatcore";
+
+initialWords("hello world");
+// "H W"
 ```
 
 ---
@@ -145,7 +154,7 @@ toKebabCase("helloWorldTest");
 ## get
 
 ```ts
-import { get } from "neatcore";
+import { get } from "@titocandradev/neatcore";
 
 get(
   {
@@ -166,7 +175,7 @@ get(
 ## pick
 
 ```ts
-import { pick } from "neatcore";
+import { pick } from "@titocandradev/neatcore";
 
 pick({ id: 1, name: "A", age: 20 }, ["id", "name"]);
 // { id: 1, name: "A" }
@@ -175,7 +184,7 @@ pick({ id: 1, name: "A", age: 20 }, ["id", "name"]);
 ## omit
 
 ```ts
-import { omit } from "neatcore";
+import { omit } from "@titocandradev/neatcore";
 
 omit({ id: 1, name: "A", age: 20 }, ["age"]);
 // { id: 1, name: "A" }
@@ -184,7 +193,7 @@ omit({ id: 1, name: "A", age: 20 }, ["age"]);
 ## isEmptyObject
 
 ```ts
-import { isEmptyObject } from "neatcore";
+import { isEmptyObject } from "@titocandradev/neatcore";
 
 isEmptyObject({});
 // true
@@ -197,13 +206,21 @@ isEmptyObject({});
 ## debounce
 
 ```ts
-import { debounce } from "neatcore";
+import { debounce } from "@titocandradev/neatcore";
 
 const debounced = debounce(() => {
   console.log("Callback Called");
 }, 200);
 
 debounced();
+```
+
+## tryCatch
+
+```ts
+import { tryCatch } from "@titocandradev/neatcore";
+
+const [error, result] = await tryCatch(Promise.resolve("success"));
 ```
 
 ---

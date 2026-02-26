@@ -12,4 +12,14 @@ describe("pick", () => {
     const input = { a: 1, b: 2, c: 3 };
     expect(pick(input, [])).toEqual({});
   });
+
+  it("should return an empty object if no input are specified", () => {
+    const input = {};
+    expect(pick(input, [])).toEqual({});
+  });
+
+  it("should return an specified key from an object that key not found", () => {
+    const input = { a: 1, b: 2, c: 3 };
+    expect(pick(input, ["d"])).toEqual({});
+  });
 });

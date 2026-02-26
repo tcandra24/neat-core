@@ -16,4 +16,9 @@ describe("toKebabCase", () => {
     const result = toKebabCase("Hello_World");
     expect(result).toBe("hello-world");
   });
+
+  it("should return value of empty string", () => {
+    const result = toKebabCase("");
+    expect(result).toBe("");
+  });
 });
