@@ -221,7 +221,7 @@ debounced();
 import { tryCatch } from "@titocandradev/neatcore";
 
 const [error, result] = await tryCatch(fetch("https://jsonplaceholder.typicode.com/users"));
-
+// or
 const [error, result] = await tryCatch(async () => {
   const res = await fetch(url);
   if (!res.ok) throw new Error("HTTP error");
