@@ -98,6 +98,62 @@ chunk([1, 2, 3, 4, 5], 2);
 // [[1,2],[3,4],[5]]
 ```
 
+## difference
+
+```ts
+import { difference } from "@titocandradev/neatcore";
+
+const array = [1, 2, 3, 4, 5];
+const values = [2, 4];
+const result = difference(array, values);
+// [1, 3, 5]
+```
+
+## intersection
+
+```ts
+import { intersection } from "@titocandradev/neatcore";
+
+const array = [1, 2, 3, 4, 5];
+const values = [2, 4];
+const result = intersection(array, values);
+// [2, 4]
+```
+
+## sortBy
+
+```ts
+import { intersection } from "@titocandradev/neatcore";
+
+const array = [5, 3, 8, 1, 2];
+const result = sortBy(array, (a) => a);
+// [1, 2, 3, 5, 8]
+
+const array = [
+  { id: 3, name: "Charlie" },
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+];
+const result = sortBy(array, (item) => item.id);
+// [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" },
+//   { id: 3, name: "Charlie" },
+// ]
+
+const array = [
+  { id: 3, name: "Charlie" },
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+];
+const result = sortBy(array, (item) => item.id, "desc");
+// [
+//   { id: 3, name: "Charlie" },
+//   { id: 2, name: "Bob" },
+//   { id: 1, name: "Alice" },
+// ]
+```
+
 ---
 
 # 5. String Utilities
@@ -145,6 +201,36 @@ import { initialWords } from "@titocandradev/neatcore";
 
 initialWords("hello world");
 // "H W"
+```
+
+## truncate
+
+```ts
+import { truncate } from "@titocandradev/truncate";
+
+truncate("Hello, world!", 5);
+// "Hello..."
+
+truncate("Hello, world!", 5, "!!!");
+// "Hello!!!"
+```
+
+## slugify
+
+```ts
+import { slugify } from "@titocandradev/slugify";
+
+slugify("Hello World");
+// "hello-world"
+```
+
+## toSnakeCase
+
+```ts
+import { toSnakeCase } from "@titocandradev/toSnakeCase";
+
+toSnakeCase("Hello World");
+// "hello_world"
 ```
 
 ---
@@ -197,6 +283,18 @@ import { isEmptyObject } from "@titocandradev/neatcore";
 
 isEmptyObject({});
 // true
+```
+
+## merge
+
+```ts
+import { merge } from "@titocandradev/neatcore";
+
+const obj1 = { a: 1 };
+const obj2 = { b: 2 };
+const obj3 = { c: 3 };
+const result = merge(obj1, obj2, obj3);
+// { a: 1, b: 2, c: 3 }
 ```
 
 ---

@@ -5,3 +5,4 @@ export * from "./toKebabCase";
 export * from "./initialWords";
 export * from "./truncate";
 export * from "./slugify";
+export * from "./toSnakeCase";
