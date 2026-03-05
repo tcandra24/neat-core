@@ -7,6 +7,7 @@ export default defineConfig({
   description: "A clean, zero-dependency, TypeScript-first utility core.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/logo.png",
     nav: [
       {
         text: "Array",
@@ -112,4 +113,15 @@ export default defineConfig({
     },
     socialLinks: [{ icon: "github", link: "https://github.com/tcandra24/neat-core" }],
   },
+  head: [
+    ["meta", { name: "theme-color", content: "#ffffff" }],
+    ["link", { rel: "icon", href: "/logo.png", type: "image/png" }],
+    ["meta", { name: "author", content: "Tito Candra" }],
+    ["meta", { property: "og:title", content: "NeatCore" }],
+    // ['meta', { property: 'og:image', content: 'https://shiki.style/og.png' }], disabled until host to domain
+    ["meta", { property: "og:description", content: "A clean, zero-dependency, TypeScript-first utility core" }],
+    ["meta", { name: "twitter:card", content: "summary_large_image" }],
+    // ['meta', { name: 'twitter:image', content: 'https://shiki.style/og.png' }], disabled until host to domain
+    ["meta", { name: "viewport", content: "width=device-width, initial-scale=1.0, viewport-fit=cover" }],
+  ],
 });
