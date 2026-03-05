@@ -6,6 +6,9 @@ hero:
   name: "NeatCore"
   text: "Lightweight Utility Toolkit"
   tagline: Clean, predictable, and dependency-free utilities for building modern applications.
+  image:
+    src: /logo.png
+    alt: NeatCore Logo
   actions:
     - theme: brand
       text: What is NeatCore?
