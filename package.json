@@ -37,7 +37,10 @@
     "build": "tsup",
     "test": "vitest",
     "test:run": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "acorn": "^8.15.0",
@@ -113,6 +116,7 @@
     "@vitest/coverage-v8": "^4.0.18",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
+    "vitepress": "^2.0.0-alpha.16",
     "vitest": "^4.0.18"
   },
   "publishConfig": {

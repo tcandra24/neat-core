@@ -86,7 +86,20 @@ uniqueBy(
 ```ts
 import { groupBy } from "@titocandradev/neatcore";
 
-groupBy(["apple", "banana", "apricot"], (item) => item[0]);
+const input = [
+  { id: 1, category: "A" },
+  { id: 2, category: "B" },
+  { id: 3, category: "A" },
+];
+
+groupBy(input, "category");
+// {
+//   A: [
+//     { id: 1, category: "A" },
+//     { id: 3, category: "A" },
+//   ],
+//   B: [{ id: 2, category: "B" }],
+// }
 ```
 
 ## chunk
@@ -206,7 +219,7 @@ initialWords("hello world");
 ## truncate
 
 ```ts
-import { truncate } from "@titocandradev/truncate";
+import { truncate } from "@titocandradev/neatcore";
 
 truncate("Hello, world!", 5);
 // "Hello..."
@@ -218,7 +231,7 @@ truncate("Hello, world!", 5, "!!!");
 ## slugify
 
 ```ts
-import { slugify } from "@titocandradev/slugify";
+import { slugify } from "@titocandradev/neatcore";
 
 slugify("Hello World");
 // "hello-world"
@@ -227,7 +240,7 @@ slugify("Hello World");
 ## toSnakeCase
 
 ```ts
-import { toSnakeCase } from "@titocandradev/toSnakeCase";
+import { toSnakeCase } from "@titocandradev/neatcore";
 
 toSnakeCase("Hello World");
 // "hello_world"
