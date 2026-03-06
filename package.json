@@ -3,7 +3,7 @@
   "version": "0.4.0",
   "private": false,
   "description": "A clean, zero-dependency, TypeScript-first utility core.",
-  "homepage": "https://github.com/tcandra24/neat-core#readme",
+  "homepage": "https://tcandra24.github.io/neat-core/",
   "bugs": {
     "url": "https://github.com/tcandra24/neat-core/issues"
   },
