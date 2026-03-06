@@ -1,4 +1,4 @@
-# @titocandradev/neatcore
+# NeatCore
 
 > Zero-dependency, tree-shakeable, TypeScript-first utility library.
 
