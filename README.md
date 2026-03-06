@@ -1,7 +1,5 @@
 # @titocandradev/neatcore
 
-![npm](https://img.shields.io/npm/v/@titocandradev/neatcore)
-
 > Zero-dependency, tree-shakeable, TypeScript-first utility library.
 
 ![npm](https://img.shields.io/npm/v/@titocandradev/neatcore)
