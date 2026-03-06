@@ -4,6 +4,7 @@ import { version } from "../../package.json";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Neat Core",
+  base: "/neat-core/",
   description: "A clean, zero-dependency, TypeScript-first utility core.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
