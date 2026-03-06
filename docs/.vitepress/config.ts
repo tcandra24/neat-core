@@ -54,7 +54,10 @@ export default defineConfig({
       },
       {
         text: `v${version}`,
-        items: [{ text: `v${version} (current)`, link: "/" }],
+        items: [
+          { text: `v${version} (current)`, link: "/" },
+          { text: "Release Notes", link: "https://github.com/tcandra24/neat-core/releases" },
+        ],
       },
     ],
 
